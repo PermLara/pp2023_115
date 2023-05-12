@@ -14,12 +14,12 @@ public class Main {
         userService.saveUser("Иван1", "Иванов", (byte) 10);
         userService.saveUser("Иван2", "Иванов", (byte) 20);
         userService.saveUser("Иван3", "Иванов", (byte) 30);
-        userService.saveUser("Иван4", "Иванов", (byte) 50);
+        userService.saveUser("Иван4", "Иванов", (byte) 40);
         List<User> allUsers = userService.getAllUsers();
-        for (User u: allUsers) {
+        for (User u : allUsers) {
             System.out.println(u);
         }
         userService.cleanUsersTable();
         userService.dropUsersTable();
-   }
+    }
 }
